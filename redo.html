@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Todo-App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- css and font awesome links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<body>
+    <h1 class="px-5">All Task</h1>
+    <div class="px-5">
+        <form action="" class="form py-5">
+            <input type="text" placeholder="Have a productive day" disabled>
+            <input type="checkbox" class="checkbox" id="checkboxes" checked>
+            <label for="checkboxes"></label>
+            <button type="" class=" btn btn-primary" disabled> <i class="fa fa-trash" aria-hidden="true"></i></button>
+        </form>
+    </div>
+    <div class="container">
+        <button type="button" class="btn btn-primary btn-lg" id="write" >
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+        </button>
+        <div class="text-field my-3" id="field" style="display: none">
+              <form action="" id="form" class="form" onsubmit="createTask()">
+                  <input type="text" placeholder="Do something amazing!" id="task">
+                  <button id="add" class="btn btn-primary" type=" submit">Add</button>
+              </form>              
+        </div>
+    </div>
+
+    
+    
+    <div class="task-input  px-5">
+        <h2>Things to do</h2>
+        <ul>
+           
+
+        </ul>
+    </div>
+
+   
+    <script src="js/redo.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
+
+<!-- <div class="red customcb">
+    <input type="checkbox" value="1" id="customcb1" name="" />
+    <label class="inner" for="customcb1"></label>
+    <label class="outer" for="customcb1">Red</label>
+</div>
+
+<div class="orange customcb">
+    <input type="checkbox" value="1" id="customcb2" name="" />
+    <label class="inner" for="customcb2"></label>
+    <label class="outer" for="customcb2">Amber</label>
+</div>
+
+<div class="green customcb">
+    <input type="checkbox" value="1" id="customcb3" name="" />
+    <label class="inner" for="customcb3"></label>
+    <label class="outer" for="customcb3">Green</label>
+</div> -->
